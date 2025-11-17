@@ -88,6 +88,7 @@ public class DepartmentListController implements Initializable {
 			dialogStage.setScene(new Scene(pane));
 			DepartmentFormController controller = loader.getController();
 			controller.setDepartment(obj);
+			controller.setDepartment(new DepartmentService());
 			controller.updateFormData();
 			dialogStage.setResizable(false);
 			dialogStage.initOwner(parentStage);
